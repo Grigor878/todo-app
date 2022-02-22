@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.todo {
+  width: 400px;
+}
+
+//
+.todo_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-add {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+
+  &:hover {
+    color: green;
+  }
+}
+
+.input-add {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  width: 400px;
+  margin: 11px 0;
+}
+
+//
+.todo_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 11px 0;
+
+  input {
+    margin-right: 25px;
+  }
+
+  span {
+    font-size: 22px;
+  }
+}
+
+.btn-delete {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-edit {
+  color: #333;
+  opacity: 0.8;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+
+  &:hover {
+    opacity: 1;
+    color: black;
+  }
+}
+
+//
+.todo_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
